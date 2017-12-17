@@ -40,7 +40,7 @@ margin-right: .12em
 </style>
 <script>
 $(function(){
-        function nowMoney() {return 50000 * Math.exp((Date.now() - new Date('01/01/2017')) / (315576000000 / 4) );};
+        function nowMoney() {return 100000 * Math.exp((Date.now() - new Date('01/01/2017')) / (315576000000 / 4) );};
         var exampleOdometerValue = nowMoney()
         var exampleOdometer = new Odometer({ el: $('#odometer-example')[0], theme: 'slot-machine', value: exampleOdometerValue });
         exampleOdometer.update(exampleOdometerValue);
